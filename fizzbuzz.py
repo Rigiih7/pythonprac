@@ -1,9 +1,10 @@
-for i in range(20):
-    if i%3==0:
-        print('Fizz')
-    if i%5 ==0:
-        print('Buzz')
-    if i%15 ==0:
-        print('FizzBuzz')
-    else:
-        print(i)
+def fizz_buzz(input):
+    if input%15 ==0:
+        return 'FizzBuzz'
+    if input%3==0:
+        return 'Fizz'
+    if input%5 ==0:
+        return 'Buzz'
+    return input
+print(fizz_buzz(7))
+
